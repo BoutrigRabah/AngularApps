@@ -5,12 +5,16 @@ import {Routes,RouterModule} from '@angular/router';
 import {ManComponent} from './person/man/man.component';
 import {WomenComponent} from './person/women/women.component';
 import {ChildrenComponent} from './person/children/children.component';
+import {NotfoundComponent } from './notfound/notfound.component';
+import { PersonComponent } from './person/person.component';
 
 
 const routes : Routes =[
+{path : "",component:PersonComponent},
 {path : "man",component:ManComponent},
 {path : "women/:id",component:WomenComponent},
-{path : "children",component:ChildrenComponent}
+{path : "children",component:ChildrenComponent},
+{path : "**",component:NotfoundComponent}
 ]
 @NgModule({
 imports : [RouterModule.forRoot(routes)],

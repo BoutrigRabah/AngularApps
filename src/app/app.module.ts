@@ -9,6 +9,7 @@ import { PersonComponent} from './person/person.component';
 import { ManComponent } from './person/man/man.component';
 import { WomenComponent } from './person/women/women.component';
 import { ChildrenComponent } from './person/children/children.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 //routage 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ChildrenComponent } from './person/children/children.component';
     PersonComponent,
     ManComponent,
     WomenComponent,
-    ChildrenComponent
+    ChildrenComponent,
+    NotfoundComponent
       ],
   imports: [
     BrowserModule,
