@@ -1,0 +1,22 @@
+<h1>RABAH BOUTRIG JERADA</h1>
+
+<!--<div>
+    <label> name :
+        <input [(ngModel)]='person.name' placeholder="entrer le nom">
+    </label>
+</div>
+<div *ngIf="selectedPers">
+<h1>{{selectedPers.name | uppercase}}</h1>
+<div><span>id : </span>{{selectedPers.id}}</div>
+<label> name : 
+<input [(ngModel)]='selectedPers.name' placeholder="Entrer le nom" >
+</label>
+</div>
+-->
+<person-detail [pers]='selectedPers'></person-detail>
+<h2>La liste des personne</h2>
+<ul class="heroes">
+    <li *ngFor="let pers of personsapp" (click)="onSelect(pers)" [class.selected]="pers===selectedPers">
+        <span class="badge">{{pers.id}}</span> {{pers.name}}
+    </li>
+</ul>
