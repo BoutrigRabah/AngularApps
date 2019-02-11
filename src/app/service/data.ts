@@ -3,6 +3,5 @@ import {Injectable} from '@angular/core';
 export class Data {
     public storage : any;
 constructor(){
-
 }
 }
