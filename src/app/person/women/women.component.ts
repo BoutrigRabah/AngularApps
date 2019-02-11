@@ -9,8 +9,13 @@ export class WomenComponent implements OnInit {
 
   constructor(private actRoute : ActivatedRoute) { }
   id:string;
+  id2:string;
+  name:string;
   ngOnInit() {
-    this.id=this.actRoute.snapshot.paramMap.get('id');
+    //this.id=this.actRoute.snapshot.paramMap.get('id');
+    this.actRoute.paramMap.subscribe(params=> this.id=params.get('id'));
+    this.actRoute.queryParamMap.subscribe(params=> {this.id2=params.get('id2');this.name=params.get('name')});
+
   }
 
 }

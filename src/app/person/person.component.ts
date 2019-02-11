@@ -3,7 +3,8 @@ import {Component,OnInit} from '@angular/core';
 import {Data} from "../service/data";
 @Component({
 selector : 'rb-person',
-templateUrl :'./person.component.html'
+templateUrl :'./person.component.html',
+styleUrls : ['./person.component.css']
 })
 export class PersonComponent implements OnInit {
     constructor(private data:Data ){

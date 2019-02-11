@@ -1,6 +1,10 @@
 <h1>Component personne</h1>
 <nav>
-    <a routerLink='/man'>man</a>
-    <a [routerLink]="['/women','10051992']">women</a>
+    <a routerLink='/man' routerLinkActive="activeLink">man</a>
+    <a [routerLink]="['/women','1']" routerLinkActive="activeLink">women1</a>
+    <a routerLink="/women/12" [queryParams]='{id2 : "2",name:"BOUTRIG"}' routerLinkActive="activeLink">BOUTRIG</a>
+    <a routerLink="/women/12" [queryParams]='{id2 : "3",name:"ElHajjioui"}' routerLinkActive="activeLink">ElHajjioui</a>
+
 </nav>
+
 <router-outlet></router-outlet>

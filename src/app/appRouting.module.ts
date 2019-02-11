@@ -10,8 +10,9 @@ import { PersonComponent } from './person/person.component';
 
 
 const routes : Routes =[
-{path : "",component:PersonComponent},
+{path : "",component:ManComponent},
 {path : "man",component:ManComponent},
+//{path : "women",component:WomenComponent},
 {path : "women/:id",component:WomenComponent},
 {path : "children",component:ChildrenComponent},
 {path : "**",component:NotfoundComponent}
